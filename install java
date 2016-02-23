@@ -1,0 +1,9 @@
+[root@localhost ~]#rpm -Uvh /root/Downloads/jdk-7u15-linux-x64.rpm 
+
+[root@localhost ~]#alternatives --install /usr/bin/java java 
+
+/usr/java/latest/jre/bin/java 20000 
+
+[root@localhost ~]#export JAVA_HOME="/usr/java/latest" 
+
+[root@localhost ~]#javac –version
