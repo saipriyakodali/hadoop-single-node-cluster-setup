@@ -1,0 +1,4 @@
+[root@localhost ~]#cd /usr/local 
+[root@localhost ~]#gunzip hadoop-1.0.4.tar.gz 
+[root@localhost ~]#tar-xvf hadoop-1.0.4.tar
+[root@localhost ~]#ln –s hadoop-1.0.4 hadoop
