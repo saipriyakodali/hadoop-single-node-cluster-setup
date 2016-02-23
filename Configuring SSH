@@ -1,0 +1,9 @@
+[root@localhost ~]#yum install openssh-server 
+[root@localhost ~]#ssh-keygen
+#now copy the public key to the authorized_keys file, so that ssh should not require passwords every time
+[root@localhost ~]#cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+#Change the permissions of authorized_keys file by below commmand 
+[root@localhost ~]$chmod 700 ~/.ssh/authorized_keys
+[root@localhost ~]#service sshd start
+[root@localhost ~]#service iptables stop
+[root@localhost ~]#ssh localhost
